@@ -15,7 +15,7 @@
       "Merkeleon\\Logger\\": "src/"
     },
     "files": [
-      "src/Support/helpers"
+      "src/Support/helpers.php"
     ]
   }
 }

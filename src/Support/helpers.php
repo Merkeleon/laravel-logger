@@ -10,8 +10,8 @@ if (!function_exists('merkeleon_log_add'))
 
 if (!function_exists('merkeleon_log_search'))
 {
-    function merkeleon_log_add($fileName, $event)
+    function merkeleon_log_search($fileName, $event)
     {
-        app(\Merkeleon\Logger\Logger::class)->search($fileName, $event);
+        return app(\Merkeleon\Logger\Logger::class)->search($fileName, $event);
     }
 }
