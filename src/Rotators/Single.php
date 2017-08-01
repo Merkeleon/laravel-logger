@@ -20,7 +20,7 @@ class Single extends AbstractRotator
                                                                          ->toDateString();
         if (!File::isDirectory($this->workingDir))
         {
-            File::makeDirectory($this->workingDir, 0777);
+            File::makeDirectory($this->workingDir, 0777, true);
         }
     }
 
