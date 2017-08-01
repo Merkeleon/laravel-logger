@@ -44,7 +44,7 @@ class Daily extends AbstractRotator
                 $buffer = trim($buffer);
                 if (strpos($buffer, $searchStr) !== false)
                 {
-                    $result->push(json_decode(array_last(explode('|',$buffer))));
+                    $result->push(json_decode(array_last(explode('|',$buffer)), true));
                 }
             }
         }
